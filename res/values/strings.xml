@@ -4,5 +4,8 @@
     <string name="app_name">GoogleMapsV21</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="feeds">Novosti</string>
+    <string name="about">Vise</string>
+    <string name="exit">Kraj rada</string>
 
 </resources>
