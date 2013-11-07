@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity {
             // check if map is created successfully or not
             if (googleMap == null) {
                 Toast.makeText(getApplicationContext(),
-                        "Sorry! unable to create maps", Toast.LENGTH_SHORT)
+                        "Sorry unable to create maps", Toast.LENGTH_SHORT)
                         .show();
             }
             
