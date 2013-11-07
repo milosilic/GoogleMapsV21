@@ -3,9 +3,14 @@ package rs.taxi.hapsi;
 
 import com.google.android.gms.maps.GoogleMap;
 
+import android.content.Context;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;  
 import com.google.android.gms.maps.SupportMapFragment; 
+
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.Toast;
 
 
@@ -23,6 +28,8 @@ public class MainActivity extends FragmentActivity {
         try {
             // Loading map
             initilizeMap();
+            LocationManager locationManager = (LocationManager) 
+            		getSystemService(Context.LOCATION_SERVICE);
  
         } catch (Exception e) {
             e.printStackTrace();
@@ -53,5 +60,17 @@ public class MainActivity extends FragmentActivity {
         super.onResume();
         initilizeMap();
     }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.more_tab_menu, menu);
+
+
+       return true;//return true so to menu pop up is opens
+
+    }
  
 }
+
+
